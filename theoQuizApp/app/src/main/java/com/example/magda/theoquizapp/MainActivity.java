@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         //Create question 2 objects
         CheckBox checkbox1 = (CheckBox) findViewById(R.id.question2_good1);
         CheckBox checkbox2 = (CheckBox) findViewById(R.id.question2_good2);
+        CheckBox checkbox3 = (CheckBox) findViewById(R.id.question2_wrong);
         //Create question 3 object
         EditText answerBox = (EditText) findViewById(R.id.question3_good);
         //Create question 4 object
@@ -54,33 +55,34 @@ public class MainActivity extends AppCompatActivity {
         boolean a1 = radiobutton1.isChecked();
         boolean a21 = checkbox1.isChecked();
         boolean a22 = checkbox2.isChecked();
+        boolean a23 = checkbox3.isChecked();
         String a3 = answerBox.getText().toString().toLowerCase();
         boolean a4 = radiobutton2.isChecked();
         //Log.v("MainActivity.java", "Sum of points is " + pointSum(a1, a21, a22, a3, a4));
-        int numberOfPoints = pointSum(a1, a21, a22, a3, a4);
+        int numberOfPoints = pointSum(a1, a21, a22, a23, a3, a4);
         showViews(userName, numberOfPoints);
-        Toast.makeText(this, "Scroll down to see your result!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Dear " + userName + ", your number of points is " + numberOfPoints +"! Scroll down!", Toast.LENGTH_SHORT).show();
 
     }
 
-    private int pointSum(boolean a1, boolean a21, boolean a22, String a3, boolean a4) {
+    private int pointSum(boolean a1, boolean a21, boolean a22, boolean a23, String a3, boolean a4) {
         int points = 0;
 
         if (a1) {
             points += 1;
-        }
+        } else { points +=0;}
 
-        if (a21 && a22) {
+        if (a21 && a22 && !a23) {
             points += 1;
-        }
+        } else { points +=0;}
 
         if (a3.equals("duda")) {
             points += 1;
-        }
+        } else { points +=0;}
 
         if (a4) {
             points += 1;
-        }
+        } else { points +=0;}
 
         return points;
     }

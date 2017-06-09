@@ -92,7 +92,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
-            android:text="@string/question2_b" />
+            android:text="@string/question2_b"
+            android:id="@+id/question2_wrong"/>
 
         <CheckBox
             android:id="@+id/question2_good2"
