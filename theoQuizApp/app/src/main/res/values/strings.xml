@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">theoQuizApp</string>
+    <string name="name">Please type your name</string>
+    <string name="introduction">Welcome! \nLet\'s play a little game&#8230; I have 4 questions for you. Give me correct answers! \nBut first tell me your name: </string>
+    <string name="question1">Question 1.</string>
+    <string name="question1_text">What is the currency in Poland?</string>
+    <string name="question1_a">Zloty</string>
+    <string name="question1_b">Mark</string>
+    <string name="question1_c">Korona</string>
+    <string name="question2">Question 2.</string>
+    <string name="question2_text">Which of these banks have business in Poland?</string>
+    <string name="question2_a">Citibank</string>
+    <string name="question2_b">Barclays</string>
+    <string name="question2_c">Deutsche Bank</string>
+    <string name="question3">Question 3.</string>
+    <string name="question3_text">What is the surname of Polish President?</string>
+    <string name="question3_answer">Type your answer here&#8230;</string>
+    <string name="question4">Question 4.</string>
+    <string name="question4_text">Who is currently the Head of Polish Central Bank?</string>
+    <string name="question4_a">Marek Belka</string>
+    <string name="question4_b">Adam Glapinski</string>
+    <string name="question4_c">Hanna Gronkiewicz-Waltz</string>
+    <string name="submit">I\'m done.</string>
+    <string name="final_part1">, you have collected </string>
+    <string name="final_part2"> out of 4 points possible!</string>
+</resources>
